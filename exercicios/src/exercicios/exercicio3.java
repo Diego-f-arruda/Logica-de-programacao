@@ -1,22 +1,22 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
- */
+
 package exercicios;
 
 import java.util.Date;
 import java.util.Scanner;
 
-/**
- *
- * @author diego_f_arruda
- */
+
 public class exercicio3 {
     public static void main(String[] args) {
-    Scanner leia = new Scanner(System.in);
-    Date data = new Date();
-    System.out.println("Data Agora: "+data);
-    
+    Scanner s = new Scanner(System.in);
+        System.out.println("Informe o ano que nasceu");
+        int anos = s.nextInt();
+        System.out.println("Informe o mes");
+        int mes = s.nextInt();
+        System.out.println("Informe o dia");
+        int dia = s.nextInt();
+        int Res = (anos * 365) + (mes * 30) + dia;
+        System.out.println("Você já viveu " + Res + " Dias.");
+        
     
     }
 }

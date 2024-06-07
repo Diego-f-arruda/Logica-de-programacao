@@ -38,12 +38,12 @@ switch(n){
 
         break;
     
-    default:
+    default:  //Semelhante ao else
 
         break;
 }*/
 
-var codigoErro = leia.question("Digite o Codigo de erro");
+var codigoErro = leia.questionInt("Digite o Codigo de erro: ");
 switch(codigoErro){
     case 400:
     case 401:

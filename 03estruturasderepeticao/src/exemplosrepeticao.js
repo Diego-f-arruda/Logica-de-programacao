@@ -1,4 +1,14 @@
 import L from "readline-sync"
+
+//OPÇÕES DE IMPORT
+
+/*var i = leia.keyInSelect(["teste", "teste", "teste"])
+    // a opção acima cria praticamente um switch case ja na pergunta
+var i = leia.keyInYN("Deseja continuar? ")
+    //a opção acima cria a opção de sim e nao para continuar
+*/
+
+
 /*var num = 0;
 
 while(num < 10 ){

@@ -1,5 +1,6 @@
 import leia from"readline-sync"
 
+
 /*Faça um programa que leia o valor de um produto X e leia a quantidade de moedas de
 um cofrinho que contenha:
 a) N moedas de 1 real;
@@ -23,7 +24,7 @@ var V5 = v5 * 0.05
 var VTT = V1 + V2 + V3 + V4 + V5
 
 var valorP = leia.questionFloat("Qual o valor do produto desejado? ")
-
+var FLT = valorP - VTT
 if(valorP > VTT){
-        
+        console.log("ainda faltam R$" + FLT + " para conseguir!")
 }

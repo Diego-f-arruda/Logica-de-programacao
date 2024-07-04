@@ -1,27 +1,23 @@
 import leia from "readline-sync"
 
+
+
 var numerosUsuario = []
-
-var i = 0
-
-while(i < 10){
-    numerosUsuario[i] = leia.question("Digite um valor qualquer: ")
-    
-    //multiplicados.push(numerosUsuario * 5)
-    
-    /*for(var j = 0;j < 10; j++){
-        multiplicados[j] = numerosUsuario[i] * 5
-        i++
-    }*/
-
-    i++
-}
 var multiplicados = []
 
-for(var j = 0;j < 10; j++){
-    multiplicados[j] = numerosUsuario[i] * 5
+for(var i = 0;i < 10; i++){
+    numerosUsuario[i] = leia.questionInt("Digite um valor qualquer: ")
+    //numerosUsuario[i] = parseInt(Math.randon() * 10)
+    multiplicados.push(numerosUsuario[i] * 5)
+}
+/*
+
+for(var i = 0;i < numerosUsuario.length; i++){
+    multiplicados[i] = numerosUsuario[i] * 5
     
 }
+*/
+
 
 console.log(numerosUsuario)
 console.log("------------------------------------")

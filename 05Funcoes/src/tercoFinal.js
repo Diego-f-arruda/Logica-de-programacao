@@ -1,20 +1,7 @@
-function preencherVetor(tamanhoVetor, min, max){
-    var vetor = [];
-    for(var i =0; i < tamanhoVetor; i++){
-      vetor[i] = parseInt(Math.random() * (max - min)) + min
-       }
+import { obterItensVetor } from "./exemplos";
+import { preencherVetor } from "./exemplos";
 
-    return vetor;
-}
-function obterItensVetor(vetor, VResultado, min, max){
-    for(var i = min; i <= max; i++){
-        VResultado[i] = vetor[i];
-    }
-    return VResultado;
-}
-
-
-
+export function terco(){
 var v1 = preencherVetor(9, 0, 100);
 var v2 = preencherVetor(9, 0, 100);
 var v3 = preencherVetor(9, 0, 100);
@@ -39,3 +26,4 @@ console.log(v1)
 console.log(v2)
 console.log(v3)
 console.log(VResultado)
+}

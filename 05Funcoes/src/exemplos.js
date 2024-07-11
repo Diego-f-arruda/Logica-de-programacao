@@ -9,24 +9,24 @@ export default function mostrar(){
 }
 
 
-export default function somar(num1, num2){
+export function somar(num1, num2){
     var num1 = leia.questionInt("Digite o Numero: ");
     var num2 = leia.questionInt("Digite o Numero: ");
     var result = num1 + num2;
     console.log("O Resultado e: " + result);
 }
 
-export default function subtrair(num1, num2){
+export function subtrair(num1, num2){
     var result = num1 - num2;
     console.log("O Resultado e: " + result);
 }
 
-export default function multi(num1, num2){
+export function multi(num1, num2){
     var result = num1 * num2;
     return result;
 }
 
-export default function preencherVetor(tamanhoVetor, min, max){
+export function preVetSemRepetir(tamanhoVetor, min, max){
     var vetor = [];
     for(var i =0; i < tamanhoVetor; i++){
        do{
@@ -44,14 +44,21 @@ export default function preencherVetor(tamanhoVetor, min, max){
     return vetor;
 }
 
-preencherVetor(10, 50, 200)
+
+export function preencherVetor(tamanhoVetor, min, max) {
+    var vetor = [];
+    for (var i = 0; i < tamanhoVetor; i++) {
+        vetor[i] = parseInt(Math.random() * (max - min)) + min;;
+    }
+
+    return vetor;
+}
 
 
+export function obterItensVetor(vetor, VResultado, min, max){
+    for(var i = min; i <= max; i++){
+        VResultado[i] = vetor[i];
+    }
+    return VResultado;
+}
 
-
-
-somar();
-subtrair(10,5)
-var Resultado = multi(5,5)
-console.log(Resultado)
-mostrar();

@@ -16,4 +16,3 @@ console.table(matrizMaior)
 console.log("Sao maiores de dez os valores: " + maiorDeDez)
 
 }
-matrizMaior()

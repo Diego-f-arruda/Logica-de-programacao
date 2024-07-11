@@ -15,11 +15,10 @@ export function dado(){
 
     for(var i = 1; i < porCT.length; i++){
         if(porCT[i] > 22){
-            console.log("Dado esta Viciado")
+            console.log("Dado esta Viciado");
         }
     }
 
-console.table(porCT)
+console.table(porCT);
 }
 
-dado();

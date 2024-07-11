@@ -1,21 +1,14 @@
 import { preencherVetor } from "./exemplos.js";
+import { verificaDuplicidade } from "./exemplos.js";
 
-var vetor = preencherVetor(10, 0, 50);
+export function duplicado(){
+    var vetor = preencherVetor(10, 0, 50);
 
-function verificaDuplicidade(vetor) {
-    for (var i = 0; i < vetor.length; i++) {
-        for (var j = i; j < vetor.length; j++) {
-            if (j !== i && vetor[i] === vetor[i]) {
-                return true;
-            }
-        }
+    var temDuplicidade = verificaDuplicidade(vetor);
+    console.log(vetor)
+    if(temDuplicidade){
+        console.log("Tem Duplicado")
+    }else {
+        console.log("Não tem Duplicado")
     }
-    return false;
-}
-
-var temDuplicidade = verificaDuplicidade(vetor);
-if(temDuplicidade){
-    console.log("TEM DUPLICIDADE")
-}else {
-    console.log("NÃO TEM DUPLICIDADE")
 }

@@ -37,4 +37,3 @@ export function prova(){
     console.log(nota)
 }
 
-prova();

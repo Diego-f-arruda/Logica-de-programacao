@@ -1,5 +1,5 @@
-import { obterItensVetor } from "./exemplos";
-import { preencherVetor } from "./exemplos";
+import { obterItensVetor } from "./exemplos.js";
+import { preencherVetor } from "./exemplos.js";
 
 export function terco(){
 var v1 = preencherVetor(9, 0, 100);

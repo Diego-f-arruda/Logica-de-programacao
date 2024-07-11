@@ -17,4 +17,3 @@ console.log(solicitados)
 console.log("-----------------------------------")
 
 }
-antiImpar()

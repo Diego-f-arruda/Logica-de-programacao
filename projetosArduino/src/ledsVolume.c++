@@ -1,25 +1,14 @@
-#include <Adafruit_LiquidCrystal.h>
-
-
 int vetLeds[] = {4, 5, 6, 7, 8, 9, 10, 11, 12, 13};
 int ledInt[] = {100, 200, 300, 400, 500, 600, 700, 800, 900, 1000};
-Adafruit_LiquidCrystal visor(0);
 
 void setup(){
-	Serial.begin(9600);  	
-  
+	Serial.begin(9600);
   for(int i = 0;i < 10; i++){
-  	pinMode(vetLeds[i], OUTPUT);
-  } 
-  visor.begin(16, 2);
-  visor.print(5,0);
-  visor.print("CURSO");
-  visor.setCursor(0, 1);
-  visor.print("DESENVOLVIMENTO");
+  pinMode(vetLeds[i], OUTPUT);
+  }  
 }
 
 void loop(){
-  
   for(int i = 0;i < 10; i++){
   if(ledInt[i] < valorPoten()){
   	digitalWrite(vetLeds[i], HIGH);

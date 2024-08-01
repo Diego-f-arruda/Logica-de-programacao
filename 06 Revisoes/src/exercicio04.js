@@ -1,9 +1,15 @@
-import leia from "readline-sync";
+import leia from 'readline-sync';
 
-var palavra = leia.question("Digite a palavra ou o texto");
-var palavraInvertida = [];
-for(var i = palavra.length -1; i >= 0; i--){
-    palavraInvertida.push(palavra[i])
+var palavra = leia.question("DIGITE PALAVRA OU TEXTO: ");
+palavra = palavra.replaceAll(" ", "");
+var palavraInvertida = "";
 
+for (var i = 0; i <= palavra.length - 1; i++) {
+    palavraInvertida = palavra[i] + palavraInvertida;
 }
-palavraInvertida.join().replaceAll(",", "")
+
+if (palavra === palavraInvertida) {
+    console.log("É PALINDROMO")
+} else {
+    console.log("NÃO É PALINDROMO")
+}
